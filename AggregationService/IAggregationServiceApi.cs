@@ -12,9 +12,10 @@ namespace AggregationService
      [ServiceContract(Namespace = Namespaces.Hotelpopcorn, SessionMode = SessionMode.Allowed)]
     public interface IAggregationServiceApi
     {
+         [OperationContract]
 
          SearchResult Query(List<SearchCondition> condition, string commaSeperatedSelectfields, SearchOptions searchOptions);
-
+          [OperationContract]
          SearchResult QueryNext(SearchResult queryResult);
          
         

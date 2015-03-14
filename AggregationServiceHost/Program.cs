@@ -12,15 +12,15 @@ namespace AggregationServiceHost
     {
         static void Main(string[] args)
         {
-            Uri baseAddress = new Uri("http://localhost:8080/hello");
+            Uri baseAddress = new Uri("http://localhost:8080/AggregationServiceApi");
             // Create the ServiceHost.
             using (ServiceHost host = new ServiceHost(typeof(AggregationServiceApi), baseAddress))
             {
                 // Enable metadata publishing.
-                ServiceMetadataBehavior smb = new ServiceMetadataBehavior();
-                smb.HttpGetEnabled = true;
-                smb.MetadataExporter.PolicyVersion = PolicyVersion.Policy15;
-                host.Description.Behaviors.Add(smb);
+                //ServiceMetadataBehavior smb = new ServiceMetadataBehavior();
+                //smb.HttpGetEnabled = true;
+                //smb.MetadataExporter.PolicyVersion = PolicyVersion.Policy15;
+                //host.Description.Behaviors.Add(smb);
 
                 // Open the ServiceHost to start listening for messages. Since
                 // no endpoints are explicitly configured, the runtime will create
