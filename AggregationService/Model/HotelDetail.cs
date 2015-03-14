@@ -50,9 +50,9 @@ namespace AggregationService.Model
             set { geoCode = value; }
         }
 
-        private string roomdetails;
+        private RoomInfo roomdetails;
         [DataMember]
-        public string RoomDetails
+        public RoomInfo RoomDetails
         {
             get { return roomdetails; }
             set { roomdetails = value; }
