@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="HotelListResponse" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="HotelListResponse" msdata:IsDataSet="true" msdata:Locale="en-US">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="HotelList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="HotelSummary" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="hotelId" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+                    <xs:element name="name" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+                    <xs:element name="address1" type="xs:string" minOccurs="0" msdata:Ordinal="2" />
+                    <xs:element name="address2" type="xs:string" minOccurs="0" msdata:Ordinal="3" />
+                    <xs:element name="city" type="xs:string" minOccurs="0" msdata:Ordinal="4" />
+                    <xs:element name="postalCode" type="xs:string" minOccurs="0" msdata:Ordinal="5" />
+                    <xs:element name="countryCode" type="xs:string" minOccurs="0" msdata:Ordinal="6" />
+                    <xs:element name="airportCode" type="xs:string" minOccurs="0" msdata:Ordinal="7" />
+                    <xs:element name="supplierType" type="xs:string" minOccurs="0" msdata:Ordinal="8" />
+                    <xs:element name="propertyCategory" type="xs:string" minOccurs="0" msdata:Ordinal="9" />
+                    <xs:element name="hotelRating" type="xs:string" minOccurs="0" msdata:Ordinal="10" />
+                    <xs:element name="confidenceRating" type="xs:string" minOccurs="0" msdata:Ordinal="11" />
+                    <xs:element name="amenityMask" type="xs:string" minOccurs="0" msdata:Ordinal="12" />
+                    <xs:element name="locationDescription" type="xs:string" minOccurs="0" msdata:Ordinal="13" />
+                    <xs:element name="shortDescription" type="xs:string" minOccurs="0" msdata:Ordinal="14" />
+                    <xs:element name="highRate" type="xs:string" minOccurs="0" msdata:Ordinal="15" />
+                    <xs:element name="lowRate" type="xs:string" minOccurs="0" msdata:Ordinal="16" />
+                    <xs:element name="rateCurrencyCode" type="xs:string" minOccurs="0" msdata:Ordinal="17" />
+                    <xs:element name="latitude" type="xs:string" minOccurs="0" msdata:Ordinal="18" />
+                    <xs:element name="longitude" type="xs:string" minOccurs="0" msdata:Ordinal="19" />
+                    <xs:element name="proximityDistance" type="xs:string" minOccurs="0" msdata:Ordinal="20" />
+                    <xs:element name="proximityUnit" type="xs:string" minOccurs="0" msdata:Ordinal="21" />
+                    <xs:element name="hotelInDestination" type="xs:string" minOccurs="0" msdata:Ordinal="22" />
+                    <xs:element name="thumbNailUrl" type="xs:string" minOccurs="0" msdata:Ordinal="23" />
+                    <xs:element name="RoomRateDetailsList" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="RoomRateDetails" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="roomTypeCode" type="xs:string" minOccurs="0" />
+                                <xs:element name="rateCode" type="xs:string" minOccurs="0" />
+                                <xs:element name="maxRoomOccupancy" type="xs:string" minOccurs="0" />
+                                <xs:element name="quotedRoomOccupancy" type="xs:string" minOccurs="0" />
+                                <xs:element name="minGuestAge" type="xs:string" minOccurs="0" />
+                                <xs:element name="roomDescription" type="xs:string" minOccurs="0" />
+                                <xs:element name="propertyAvailable" type="xs:string" minOccurs="0" />
+                                <xs:element name="propertyRestricted" type="xs:string" minOccurs="0" />
+                                <xs:element name="expediaPropertyId" type="xs:string" minOccurs="0" />
+                                <xs:element name="smokingPreferences" type="xs:string" minOccurs="0" />
+                                <xs:element name="RateInfos" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="RateInfo" minOccurs="0" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="cancellationPolicy" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+                                            <xs:element name="nonRefundable" type="xs:string" minOccurs="0" msdata:Ordinal="2" />
+                                            <xs:element name="rateType" type="xs:string" minOccurs="0" msdata:Ordinal="3" />
+                                            <xs:element name="promoId" type="xs:string" minOccurs="0" msdata:Ordinal="4" />
+                                            <xs:element name="promoDescription" type="xs:string" minOccurs="0" msdata:Ordinal="5" />
+                                            <xs:element name="promoType" type="xs:string" minOccurs="0" msdata:Ordinal="6" />
+                                            <xs:element name="currentAllotment" type="xs:string" minOccurs="0" msdata:Ordinal="7" />
+                                            <xs:element name="RoomGroup" minOccurs="0" maxOccurs="unbounded">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="Room" minOccurs="0" maxOccurs="unbounded">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="numberOfAdults" type="xs:string" minOccurs="0" />
+                                                        <xs:element name="numberOfChildren" type="xs:string" minOccurs="0" />
+                                                        <xs:element name="rateKey" type="xs:string" minOccurs="0" />
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="ChargeableRateInfo" minOccurs="0" maxOccurs="unbounded">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="NightlyRatesPerRoom" minOccurs="0" maxOccurs="unbounded">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="NightlyRate" minOccurs="0" maxOccurs="unbounded">
+                                                          <xs:complexType>
+                                                            <xs:attribute name="baseRate" type="xs:string" />
+                                                            <xs:attribute name="rate" type="xs:string" />
+                                                            <xs:attribute name="promo" type="xs:string" />
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                      <xs:attribute name="size" type="xs:string" />
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element name="Surcharges" minOccurs="0" maxOccurs="unbounded">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="Surcharge" minOccurs="0" maxOccurs="unbounded">
+                                                          <xs:complexType>
+                                                            <xs:attribute name="type" type="xs:string" />
+                                                            <xs:attribute name="amount" type="xs:string" />
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                      <xs:attribute name="size" type="xs:string" />
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="averageBaseRate" type="xs:string" />
+                                                <xs:attribute name="averageRate" type="xs:string" />
+                                                <xs:attribute name="commissionableUsdTotal" type="xs:string" />
+                                                <xs:attribute name="currencyCode" type="xs:string" />
+                                                <xs:attribute name="maxNightlyRate" type="xs:string" />
+                                                <xs:attribute name="nightlyRateTotal" type="xs:string" />
+                                                <xs:attribute name="surchargeTotal" type="xs:string" />
+                                                <xs:attribute name="total" type="xs:string" />
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="CancelPolicyInfoList" minOccurs="0" maxOccurs="unbounded">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="CancelPolicyInfo" minOccurs="0" maxOccurs="unbounded">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="versionId" type="xs:string" minOccurs="0" />
+                                                        <xs:element name="cancelTime" type="xs:string" minOccurs="0" />
+                                                        <xs:element name="startWindowHours" type="xs:string" minOccurs="0" />
+                                                        <xs:element name="nightCount" type="xs:string" minOccurs="0" />
+                                                        <xs:element name="percent" type="xs:string" minOccurs="0" />
+                                                        <xs:element name="currencyCode" type="xs:string" minOccurs="0" />
+                                                        <xs:element name="timeZoneDescription" type="xs:string" minOccurs="0" />
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="HotelFees" minOccurs="0" maxOccurs="unbounded">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="HotelFee" minOccurs="0" maxOccurs="unbounded">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="HotelFeeBreakdown" minOccurs="0" maxOccurs="unbounded">
+                                                          <xs:complexType>
+                                                            <xs:attribute name="unit" type="xs:string" />
+                                                            <xs:attribute name="frequency" type="xs:string" />
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                      <xs:attribute name="description" type="xs:string" />
+                                                      <xs:attribute name="amount" type="xs:string" />
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="size" type="xs:string" />
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute name="priceBreakdown" type="xs:string" />
+                                          <xs:attribute name="promo" type="xs:string" />
+                                          <xs:attribute name="rateChange" type="xs:string" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="size" type="xs:string" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="ValueAdds" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="ValueAdd" minOccurs="0" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="description" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+                                          </xs:sequence>
+                                          <xs:attribute name="id" type="xs:string" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="size" type="xs:string" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="BedTypes" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="BedType" minOccurs="0" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="description" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+                                          </xs:sequence>
+                                          <xs:attribute name="id" type="xs:string" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="size" type="xs:string" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="order" type="xs:string" />
+                  <xs:attribute name="ubsScore" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="size" type="xs:string" />
+            <xs:attribute name="activePropertyCount" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

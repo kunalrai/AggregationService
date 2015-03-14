@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" targetNamespace="http://www.temp.com/hotel/hotel-search-response" xmlns:mstns="http://www.temp.com/hotel/hotel-search-response" xmlns="http://www.temp.com/hotel/hotel-search-response" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app1="http://www.temp.com/places/hotel-info" xmlns:app2="http://www.temp.com/hotel/common">
+  <xs:import namespace="http://www.temp.com/places/hotel-info" schemaLocation="XMLfile2_app1.xsd" />
+  <xs:import namespace="http://www.temp.com/hotel/common" schemaLocation="XMLfile2_app2.xsd" />
+  <xs:element name="hotel-search-response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="currency" type="xs:string" minOccurs="0" />
+        <xs:element name="base-url" type="xs:string" minOccurs="0" />
+        <xs:element name="search-criteria" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="booking-date" type="xs:string" minOccurs="0" />
+              <xs:element name="check-in-date" type="xs:string" minOccurs="0" />
+              <xs:element name="check-out-date" type="xs:string" minOccurs="0" />
+              <xs:element name="number-of-rooms" type="xs:string" minOccurs="0" />
+              <xs:element name="number-of-nights" type="xs:string" minOccurs="0" />
+              <xs:element name="number-of-room-nights" type="xs:string" minOccurs="0" />
+              <xs:element name="city" type="xs:string" minOccurs="0" />
+              <xs:element name="state" type="xs:string" minOccurs="0" />
+              <xs:element name="country" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="hotels" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="hotel" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="hotel-id" type="xs:string" minOccurs="0" />
+                    <xs:element name="basic-info" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element ref="app1:hotel-info-copyright" minOccurs="0" />
+                          <xs:element ref="app1:hotel-name" minOccurs="0" />
+                          <xs:element ref="app1:address" minOccurs="0" />
+                          <xs:element ref="app1:locality" minOccurs="0" />
+                          <xs:element ref="app1:locality-latitude" minOccurs="0" />
+                          <xs:element ref="app1:locality-longitude" minOccurs="0" />
+                          <xs:element ref="app1:city" minOccurs="0" />
+                          <xs:element ref="app1:state" minOccurs="0" />
+                          <xs:element ref="app1:state-code" minOccurs="0" />
+                          <xs:element ref="app1:country" minOccurs="0" />
+                          <xs:element ref="app1:country-code" minOccurs="0" />
+                          <xs:element ref="app1:zip" minOccurs="0" />
+                          <xs:element ref="app1:chain" minOccurs="0" />
+                          <xs:element ref="app1:overview" minOccurs="0" />
+                          <xs:element ref="app1:thumb-nail-image" minOccurs="0" />
+                          <xs:element ref="app1:is-veg" minOccurs="0" />
+                          <xs:element ref="app1:is-on-hold" minOccurs="0" />
+                          <xs:element ref="app1:star-rating" minOccurs="0" />
+                          <xs:element ref="app1:ct-recommendation" minOccurs="0" />
+                          <xs:element ref="app1:notice" minOccurs="0" />
+                          <xs:element ref="app1:ct-recommended" minOccurs="0" />
+                          <xs:element ref="app1:rate-info" />
+                          <xs:element ref="app1:communication-info" />
+                          <xs:element ref="app1:hotel-amenities" />
+                          <xs:element ref="app1:hotel-ratings" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="room-rates" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="room-rate" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ct-rate-rule-ids" type="xs:string" minOccurs="0" />
+                                <xs:element name="booking-code" type="xs:string" minOccurs="0" />
+                                <xs:element name="provisional-booking-required" type="xs:string" minOccurs="0" />
+                                <xs:element name="rate-type" type="xs:string" minOccurs="0" />
+                                <xs:element name="cancellation-start-time" type="xs:string" minOccurs="0" />
+                                <xs:element name="currency_code" type="xs:string" minOccurs="0" />
+                                <xs:element name="is-package" type="xs:string" minOccurs="0" />
+                                <xs:element name="package-savings" type="xs:string" minOccurs="0" />
+                                <xs:element name="post-pay" type="xs:string" minOccurs="0" />
+                                <xs:element name="base-pkg-diff" type="xs:string" minOccurs="0" />
+                                <xs:element name="merged-rate-ids" type="xs:string" minOccurs="0" />
+                                <xs:element name="base-rate-id" type="xs:string" minOccurs="0" />
+                                <xs:element name="room-type" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="room-type-code" type="xs:string" minOccurs="0" />
+                                      <xs:element name="room-description" type="xs:string" minOccurs="0" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="rate-breakdown" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element ref="app2:rate" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="inclusions" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="inclusion" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                          <xs:simpleContent msdata:ColumnName="inclusion_Text" msdata:Ordinal="0">
+                                            <xs:extension base="xs:string">
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="promo-offers" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="promo-offer" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="offer-key" type="xs:string" minOccurs="0" />
+                                <xs:element name="offer-value" type="xs:string" minOccurs="0" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="hotel-search-response" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

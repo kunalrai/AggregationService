@@ -1,0 +1,87 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema targetNamespace="http://www.temp.com/places/hotel-info" xmlns:mstns="http://www.temp.com/hotel/hotel-search-response" xmlns="http://www.temp.com/places/hotel-info" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app1="http://www.temp.com/places/hotel-info" xmlns:app2="http://www.temp.com/hotel/common">
+  <xs:import namespace="http://www.temp.com/hotel/common" schemaLocation="XMLfile2_app2.xsd" />
+  <xs:import namespace="http://www.temp.com/hotel/hotel-search-response" schemaLocation="XMLfile2.xsd" />
+  <xs:element name="hotel-info-copyright" msdata:Prefix="hotel-info" type="xs:string" />
+  <xs:element name="hotel-name" msdata:Prefix="hotel-info" type="xs:string" />
+  <xs:element name="address" msdata:Prefix="hotel-info" type="xs:string" />
+  <xs:element name="locality" msdata:Prefix="hotel-info" type="xs:string" />
+  <xs:element name="locality-latitude" msdata:Prefix="hotel-info" type="xs:string" />
+  <xs:element name="locality-longitude" msdata:Prefix="hotel-info" type="xs:string" />
+  <xs:element name="city" msdata:Prefix="hotel-info" type="xs:string" />
+  <xs:element name="state" msdata:Prefix="hotel-info" type="xs:string" />
+  <xs:element name="state-code" msdata:Prefix="hotel-info" type="xs:string" />
+  <xs:element name="country" msdata:Prefix="hotel-info" type="xs:string" />
+  <xs:element name="country-code" msdata:Prefix="hotel-info" type="xs:string" />
+  <xs:element name="zip" msdata:Prefix="hotel-info" type="xs:string" />
+  <xs:element name="chain" msdata:Prefix="hotel-info" type="xs:string" />
+  <xs:element name="overview" msdata:Prefix="hotel-info" type="xs:string" />
+  <xs:element name="thumb-nail-image" msdata:Prefix="hotel-info" type="xs:string" />
+  <xs:element name="is-veg" msdata:Prefix="hotel-info" type="xs:string" />
+  <xs:element name="is-on-hold" msdata:Prefix="hotel-info" type="xs:string" />
+  <xs:element name="star-rating" msdata:Prefix="hotel-info" type="xs:string" />
+  <xs:element name="ct-recommendation" msdata:Prefix="hotel-info" type="xs:string" />
+  <xs:element name="notice" msdata:Prefix="hotel-info" type="xs:string" />
+  <xs:element name="ct-recommended" msdata:Prefix="hotel-info" type="xs:string" />
+  <xs:element name="rate-info" msdata:Prefix="hotel-info">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="high-rate" msdata:Prefix="hotel-info" type="xs:string" minOccurs="0" />
+        <xs:element name="low-rate" msdata:Prefix="hotel-info" type="xs:string" minOccurs="0" />
+        <xs:element name="currency" msdata:Prefix="hotel-info" type="xs:string" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="communication-info" msdata:Prefix="hotel-info">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="phone" msdata:Prefix="hotel-info" type="xs:string" minOccurs="0" />
+        <xs:element name="fax" msdata:Prefix="hotel-info" type="xs:string" minOccurs="0" />
+        <xs:element name="email" msdata:Prefix="hotel-info" type="xs:string" minOccurs="0" />
+        <xs:element name="website" msdata:Prefix="hotel-info" type="xs:string" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="hotel-amenities" msdata:Prefix="hotel-info">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="hotel-amenity" msdata:Prefix="hotel-info" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="category" msdata:Prefix="hotel-info" type="xs:string" minOccurs="0" />
+              <xs:element name="amenities" msdata:Prefix="hotel-info" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="amenity" msdata:Prefix="hotel-info" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:simpleContent msdata:Prefix="hotel-info" msdata:ColumnName="amenity_Text" msdata:Ordinal="0">
+                          <xs:extension base="xs:string">
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="hotel-ratings" msdata:Prefix="hotel-info">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="hotel-rating" msdata:Prefix="hotel-info" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="rating-type" msdata:Prefix="hotel-info" type="xs:string" minOccurs="0" />
+              <xs:element name="rating" msdata:Prefix="hotel-info" type="xs:string" minOccurs="0" />
+              <xs:element name="total-ratings" msdata:Prefix="hotel-info" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

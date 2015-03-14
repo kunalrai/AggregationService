@@ -7,8 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AggregationService", "Aggre
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CDB9D88C-AFE2-4C9F-9197-58F76C180C20}"
 	ProjectSection(SolutionItems) = preProject
-		C:\Users\Kunal\Documents\Visual Studio 2013\Projects\XMLFile1.xml = C:\Users\Kunal\Documents\Visual Studio 2013\Projects\XMLFile1.xml
-		C:\Users\Kunal\Documents\Visual Studio 2013\Projects\XMLFile2.xml = C:\Users\Kunal\Documents\Visual Studio 2013\Projects\XMLFile2.xml
+		XMLFile1.xml = XMLFile1.xml
+		XMLFile2.xml = XMLFile2.xml
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AggregationServiceTest", "AggregationServiceTest\AggregationServiceTest.csproj", "{56FBE735-F7F0-4E8E-86C7-8DAA085A4604}"

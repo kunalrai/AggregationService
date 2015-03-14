@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema targetNamespace="http://www.temp.com/hotel/common" xmlns:mstns="http://www.temp.com/hotel/hotel-search-response" xmlns="http://www.temp.com/hotel/common" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app2="http://www.temp.com/hotel/common" xmlns:app1="http://www.temp.com/places/hotel-info">
+  <xs:import namespace="http://www.temp.com/places/hotel-info" schemaLocation="XMLfile2_app1.xsd" />
+  <xs:import namespace="http://www.temp.com/hotel/hotel-search-response" schemaLocation="XMLfile2.xsd" />
+  <xs:element name="rate" msdata:Prefix="common">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="date" msdata:Prefix="common" type="xs:string" minOccurs="0" />
+        <xs:element name="pricing-elements" msdata:Prefix="common" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="pricing-element" msdata:Prefix="common" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="category" msdata:Prefix="common" type="xs:string" minOccurs="0" />
+                    <xs:element name="amount" msdata:Prefix="common" type="xs:string" minOccurs="0" />
+                    <xs:element name="code" msdata:Prefix="common" type="xs:string" minOccurs="0" />
+                    <xs:element name="label" msdata:Prefix="common" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
