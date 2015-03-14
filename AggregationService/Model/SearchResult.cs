@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
@@ -21,6 +22,23 @@ namespace AggregationService.Model
         {
             get;
             set;
+        }
+
+        private DataSet Data;
+
+        [DataMember]
+        public DataSet data
+        {
+            get
+            {
+                if (Data == null)
+                    Data = new DataSet();
+                return this.Data;
+            }
+            set
+            {
+                this.Data = value;
+            }
         }
     }
 }
