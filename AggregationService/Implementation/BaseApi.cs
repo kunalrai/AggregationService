@@ -5,7 +5,7 @@ using System.Text;
 
 namespace AggregationService.Implementation
 {
-    class BaseApi :IDisposable
+    public class BaseApi :IDisposable
     {
         internal static string ToSafeXmlString(string inputString)
         {
@@ -34,6 +34,11 @@ namespace AggregationService.Implementation
             }
 
             return inputString;
+        }
+
+        public void Dispose()
+        {
+           
         }
     }
 }

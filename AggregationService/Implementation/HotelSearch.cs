@@ -6,7 +6,7 @@ using System.Text;
 
 namespace AggregationService.Implementation
 {
-    class HotelSearch :BaseApi
+    public class HotelSearch :BaseApi
     {
         public SearchResult Query(List<SearchCondition> condition, string commaSeperatedSelectfields, SearchOptions searchOptions)
         {

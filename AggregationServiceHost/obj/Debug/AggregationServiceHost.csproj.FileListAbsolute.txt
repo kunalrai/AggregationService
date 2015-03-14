@@ -1,0 +1,8 @@
+F:\Demo\hakerrank\AggregationService\AggregationServiceHost\bin\Debug\AggregationServiceHost.exe.config
+F:\Demo\hakerrank\AggregationService\AggregationServiceHost\bin\Debug\AggregationServiceHost.exe
+F:\Demo\hakerrank\AggregationService\AggregationServiceHost\bin\Debug\AggregationServiceHost.pdb
+F:\Demo\hakerrank\AggregationService\AggregationServiceHost\bin\Debug\AggregationService.dll
+F:\Demo\hakerrank\AggregationService\AggregationServiceHost\bin\Debug\AggregationService.pdb
+F:\Demo\hakerrank\AggregationService\AggregationServiceHost\obj\Debug\AggregationServiceHost.csprojResolveAssemblyReference.cache
+F:\Demo\hakerrank\AggregationService\AggregationServiceHost\obj\Debug\AggregationServiceHost.exe
+F:\Demo\hakerrank\AggregationService\AggregationServiceHost\obj\Debug\AggregationServiceHost.pdb

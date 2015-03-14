@@ -7,7 +7,7 @@ using System.Text;
 namespace AggregationService.Model
 {
     [DataContract(Namespace = Namespaces.Hotelpopcorn)]
-    class SearchResult
+    public class SearchResult
     {
         [DataMember]
         public SearchContext SearchContext

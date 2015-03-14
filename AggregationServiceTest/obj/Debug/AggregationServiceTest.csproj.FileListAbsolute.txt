@@ -1,0 +1,5 @@
+F:\Demo\hakerrank\AggregationService\AggregationServiceTest\bin\Debug\AggregationServiceTest.dll
+F:\Demo\hakerrank\AggregationService\AggregationServiceTest\bin\Debug\AggregationServiceTest.pdb
+F:\Demo\hakerrank\AggregationService\AggregationServiceTest\obj\Debug\AggregationServiceTest.csprojResolveAssemblyReference.cache
+F:\Demo\hakerrank\AggregationService\AggregationServiceTest\obj\Debug\AggregationServiceTest.dll
+F:\Demo\hakerrank\AggregationService\AggregationServiceTest\obj\Debug\AggregationServiceTest.pdb
