@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AggregationServiceHost", "A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkippingSum", "SkippingSUm\SkippingSum.csproj", "{03A27513-BFE2-49E6-90D1-439FD7B18A9F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatchingPoints", "MatchingPoints\MatchingPoints.csproj", "{7EE28136-E16E-493C-AE45-A6FB303B54DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{03A27513-BFE2-49E6-90D1-439FD7B18A9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03A27513-BFE2-49E6-90D1-439FD7B18A9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03A27513-BFE2-49E6-90D1-439FD7B18A9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EE28136-E16E-493C-AE45-A6FB303B54DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EE28136-E16E-493C-AE45-A6FB303B54DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EE28136-E16E-493C-AE45-A6FB303B54DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EE28136-E16E-493C-AE45-A6FB303B54DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
